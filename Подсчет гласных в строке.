@@ -1,0 +1,14 @@
+function getVowelsCount(str) {
+    str2 = str.toLowerCase();
+    let count = 0;
+    let mass = str2.split('');
+    for (let i = 0; i < str.length; i++) {
+        if (mass[i] === 'а' || mass[i] === 'е' || mass[i] === 'ё' || mass[i] === 'о' || mass[i] === 'у' || mass[i] === 'ы' || mass[i] === 'э' || mass[i] === 'и' || mass[i] === 'ю'
+            || mass[i] === 'я'
+        ){
+            count++;
+        }
+    }
+    console.log(count)
+}
+getVowelsCount('АВАВА')
