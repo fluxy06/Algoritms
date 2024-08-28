@@ -1,0 +1,22 @@
+function palindrome(str) {
+    let c = str.toLowerCase()
+    let b  = c.length
+    let mass = []
+    let mass_un = []
+
+    for (let i = 0; i < b; i++){
+        mass[i] = c[i]
+        mass_un[i] = c[b - i - 1]
+    }
+    if (JSON.stringify(mass) === JSON.stringify(mass_un)) {
+        console.log('True')
+    }
+    else if 
+        (JSON.stringify(mass) != JSON.stringify(mass_un)) {
+            console.log('False')
+    }
+}
+palindrome('Мадам')
+palindrome('Шалаш')
+palindrome('Стол')
+palindrome('Кореной')
