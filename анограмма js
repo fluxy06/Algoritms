@@ -1,0 +1,24 @@
+function isAnagram(a, b) {
+  // Напишите код здесь
+  let word1 = a.toLowerCase();
+    let word2 = b.toLowerCase();
+
+    if (word1.length !== word2.length) {
+        console.log('Не анаграмма');
+        return;
+    }
+
+    // Преобразуем строки в массивы и сортируем их
+    let mass = word1.split('').sort();
+    let mass2 = word2.split('').sort();
+
+    // Сравниваем массивы
+    for (let i = 0; i < mass.length; i++) {
+        if (mass[i] !== mass2[i]) {
+            console.log('Не анаграмма');
+            return;
+        }
+    }
+
+    console.log('Анаграмма');
+}
