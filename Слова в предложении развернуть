@@ -1,0 +1,9 @@
+function reverseWords(str) {
+    let words = str.split(' '); // Разбиваем строку на массив слов
+    let reversedWords = words.map(word => word.split('').reverse().join('')); // Разворачиваем каждое слово
+
+    let result = reversedWords.join(' '); // Объединяем слова обратно в строку
+    console.log(result);
+}
+
+reverseWords('Приве, мир, Бренной'); // 'евирП ,рим ,йоннерБ'
