@@ -1,0 +1,11 @@
+function sumDigits(number) {
+    let sum = 0;
+    let str_num = number.toString(); // Преобразуем число в строку
+    let mass_num = str_num.split(''); // Разбиваем строку на массив символов
+
+    for (let i = 0; i < mass_num.length; i++) {
+        sum += parseInt(mass_num[i], 10); // Преобразуем каждый символ обратно в число и суммируем
+    }
+
+    return sum; // Возвращаем сумму
+}
