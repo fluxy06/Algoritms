@@ -1,0 +1,13 @@
+function imt(a, b) {
+    let height = (b / 100) ^ 2;
+    let Imt = a / height;
+    if (Imt < 18.5) {
+        return Imt + 'недостаток веса'
+    }else if (Imt >= 18.5 && Imt < 25) {
+        return Imt, 'нормальный вес'
+    }else if (Imt >= 25 && Imt < 30) {
+        return Imt, 'избыточный вес'
+    }else {
+        return Imt, 'ожирение'
+    }
+}   
