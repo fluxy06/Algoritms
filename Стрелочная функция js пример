@@ -1,0 +1,5 @@
+function toUpperCaseArray(arr) {
+    let d = arr.map(str => str.toUpperCase())
+    console.log(d)
+}
+toUpperCaseArray(['hello', 'world'])
